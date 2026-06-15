@@ -90,16 +90,24 @@ tags:
 
 ```mermaid
 mindmap
-  root((Video Topic))
-    Main idea
-      Key point
-      Example
-    Process
-      Step 1
-      Step 2
-    Practice
+  root((Core thesis of the video))
+    What problem it solves
+      Pain point
+      Concrete example
+    Big picture
+      Main idea
+      Mental model
+    Main workflow
+      Stage 1
+        Key step
+      Stage 2
+        Key step
+    Key mechanisms
+      Concept A
+      Concept B
+    Practical quality bar
       Pitfall
-      Takeaway
+      Optimization
 ```
 
 ## Core Concepts
@@ -120,7 +128,7 @@ Keep the note useful as a study artifact:
 - Explain concepts in the user's language.
 - Include concrete examples from the video.
 - Preserve source timestamps when available.
-- Include one overall Mermaid `mindmap` near the top of the note, before detailed reading sections. Use 5-9 main branches and keep each node short enough to scan visually.
+- Include one overall Mermaid `mindmap` near the top of the note, before detailed reading sections. Make it a visual overview, not a flat outline: center it on the video's core thesis, then branch into problem, big picture, workflow, key mechanisms, examples, and quality/practice points. Use 4-7 main branches, short node labels, and at most 3 levels unless a concrete example needs one extra level.
 - Use Mermaid flowcharts for process diagrams when screenshots alone are not enough.
 - Avoid claiming a transcript exists when the note is reconstructed from chapters/keyframes.
 - Localize headings to the user's language in the final note.
