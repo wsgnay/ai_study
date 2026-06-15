@@ -16,7 +16,7 @@ Turn a video source into a maintainable Obsidian note with source metadata, chap
 3. Prefer official or page-provided subtitles/transcripts. If unavailable, use platform chapter data, visible frames, description, and optionally local audio/video transcription if tools are available.
 4. Download or capture visual assets into an ASCII-safe attachment folder such as `assets/<slug>/`. Avoid Chinese or punctuation-heavy attachment directory names because local media tools may fail on those paths.
 5. Extract or select key images that explain the content, not decorative transition frames. Use contact sheets when reviewing many candidates.
-6. Write an Obsidian Markdown note with frontmatter, source link, chapter timeline, concept explanations, examples from the video, diagrams when useful, and a concise takeaway section.
+6. Write an Obsidian Markdown note with frontmatter, source link, a top-level mind map, chapter timeline, concept explanations, examples from the video, diagrams when useful, and a concise takeaway section.
 7. Verify every local image link exists. Remove temporary downloads, scan frames, raw video files, and scrape caches unless the user asks to keep them.
 
 ## Source Collection
@@ -86,6 +86,22 @@ tags:
 | Time Range | Topic |
 |---|---|
 
+## Mind Map
+
+```mermaid
+mindmap
+  root((Video Topic))
+    Main idea
+      Key point
+      Example
+    Process
+      Step 1
+      Step 2
+    Practice
+      Pitfall
+      Takeaway
+```
+
 ## Core Concepts
 
 ## Detailed Notes
@@ -104,7 +120,8 @@ Keep the note useful as a study artifact:
 - Explain concepts in the user's language.
 - Include concrete examples from the video.
 - Preserve source timestamps when available.
-- Use Mermaid for clean process diagrams when screenshots alone are not enough.
+- Include one overall Mermaid `mindmap` near the top of the note, before detailed reading sections. Use 5-9 main branches and keep each node short enough to scan visually.
+- Use Mermaid flowcharts for process diagrams when screenshots alone are not enough.
 - Avoid claiming a transcript exists when the note is reconstructed from chapters/keyframes.
 - Localize headings to the user's language in the final note.
 
@@ -120,6 +137,7 @@ Also check:
 
 - The note is valid UTF-8.
 - Image embeds use Obsidian-friendly paths like `![[assets/<slug>/01-image.jpg]]`.
+- The note has an overall mind map that summarizes the whole video, not only one chapter.
 - All final images are informative and readable.
 - Temporary files and scraping caches are removed.
 - If subtitles were unavailable, mention that the note is not a verbatim transcript.

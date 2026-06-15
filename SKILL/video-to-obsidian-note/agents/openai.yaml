@@ -1,4 +1,4 @@
 interface:
   display_name: "Video to Obsidian Note"
-  short_description: "Turn videos into illustrated Obsidian learning notes."
+  short_description: "Turn videos into Obsidian notes with mind maps and images."
   default_prompt: "Use $video-to-obsidian-note to turn this video link into an illustrated Obsidian learning note."
